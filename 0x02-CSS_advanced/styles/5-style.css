@@ -1,5 +1,17 @@
-/* Custom properties for font sizes in the :root selector */
+/*colors*/
 :root {
+    --color-primary: #d73953;
+    --color-black : #090909;
+    --color-white : #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+
+/*fonts*/
+    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;/* Update root with custom font family */
+    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* fonts size*/
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
@@ -7,27 +19,25 @@
     --font-size-xx-large: 4.8rem;
 }
 
-/* Set the font size for all fonts in the html element to 62.5% of their normal size */
+
 html {
+    scroll-behavior: smooth;
     font-size: 62.5%;
 }
 
-/* Set the font size for fonts in the body to font-size-medium */
+
 body {
+    color: var(--text-color); 
+    font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
 }
 
-/* Additional styles (existing styles from the original code) */
-html {
-    scroll-behavior: smooth;
-}
-
-h1, h2, h3, h4, h5, h6 {
+section :is(h1, h2, h3, h4, h5, h6) {
     font-family: var(--font-family-title);
 }
 
 a {
-    color: var(--text-color);
+   color: var(--text-color);
 }
 
 .visually-hidden {
