@@ -71,7 +71,7 @@ a {
 /* New styles for section-tagline class */
 .section-tagline {
     font-family: var(--font-family-title);
-    transform: var(--section-tagline-transform); /* Transform the text using the property section-tagline-transform */
+    text-transform: var(--section-tagline-transform); /* Use text-transform property for uppercase */
     font-weight: var(--font-weight-bold);
     background-color: var(--color-primary);
 }
