@@ -927,3 +927,9 @@
       font-weight: var(--font-weight-bold)
   
   }
+
+  .container{
+      width: 960px;
+      margin-right: auto;
+      margin-left: auto;
+  }
