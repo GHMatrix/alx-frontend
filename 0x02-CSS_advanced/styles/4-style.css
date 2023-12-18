@@ -1,0 +1,46 @@
+/* Styles from 2-style.css */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #161616;
+}
+
+a {
+    color: #161616;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.card-category {
+    color: #D73953;
+}
+
+.section-tagline {
+    color: #D73953;
+}
+
+/* Styles from 3-style.css */
+/* Custom font-family properties for the root element */
+:root {
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Set body's font-family to font-family-base */
+body {
+    font-family: var(--font-family-base);
+}
+
+/* Target all 6 levels of section headings and set font-family to font-family-title */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-title);
+}
