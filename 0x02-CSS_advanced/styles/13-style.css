@@ -1,4 +1,4 @@
-/* Existing styles from 12-style.css */
+i/* Existing styles from 12-style.css */
 :root {
     --color-primary: #d73953;
     --color-black: #090909;
@@ -51,8 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Styles for anchor elements containing a hyperlink */
-a[href]:link {
-    background-color: var(--color-light-grey);
+a[href] {
     text-decoration: none;
     color: var(--text-color);
 }
@@ -70,4 +69,5 @@ a[href]:hover {
 /* Styles for active state of the link */
 a[href]:active {
     background-color: var(--color-light-grey);
+    text-decoration: none;
 }
