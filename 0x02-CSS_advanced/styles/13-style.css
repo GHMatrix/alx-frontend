@@ -1,11 +1,12 @@
 /* Existing styles from 12-style.css */
 :root {
     --color-primary: #d73953;
-    --color-black: #090909;
-    --color-white: #ffffff;
+    --color-black : #090909;
+    --color-white : #ffffff;
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
+    --section-title-color:var(--color-black);
 
     /* fonts */
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,9 +26,11 @@
     /* line heights */
     --line-height-small: 1.2;
     --line-height-base: 1.5;
+
+    --section-tagline-transform:uppercase;
     --section-header-align: center;
 
-    /* New custom properties */
+
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
 }
@@ -37,8 +40,9 @@ html {
     font-size: 62.5%;
 }
 
+
 body {
-    background-color: var(--text-color);
+    background-color: var(--text-color); 
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
@@ -50,24 +54,47 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-/* Styles for anchor elements containing a hyperlink */
-a[href] {
+a:link {
+    background-color: var(--text-color);
     text-decoration: none;
-    color: var(--text-color);
 }
 
-/* Styles for visited state of the link */
-a[href]:visited {
+a:visited {
     font-style: italic;
 }
 
-/* Styles for hover state of the link */
-a[href]:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Styles for active state of the link */
-a[href]:active {
+a:active {
     background-color: var(--color-light-grey);
-    text-decoration: none;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.card-category {
+    background-color: var(--color-primary);
+}
+
+.section-header{
+    text-align: var(--section-header-align);
+}
+
+.section-title{
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+.section-tagline {
+    background-color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold)
+
 }
