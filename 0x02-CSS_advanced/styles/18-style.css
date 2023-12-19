@@ -394,12 +394,20 @@
       --section-title-margin:0px;
   
   /* ================= variables for padding ================== */
-      --section-padding:5rem 0;
+      --section-padding:5rem;
       --section-header-padding:0 0 3rem;
       --section-body-padding:0 0 3rem;
       --section-footer-padding:3rem 0 0;
       --footer-padding:5rem 0 1rem;
   
+  /*=========== all menus custom properties =====================*/ 
+      --nav-item-font-family: var(--font-family-title);
+      --nav-item-font-weight: var(--font-weight-bold);
+      --nav-item-font-size: var(--font-size-medium);
+      --nav-item-letter-spacing: 0.04rem;
+      --nav-item-display: inline-block;
+      --nav-item-margin: 0 0  3rem;
+      --nav-item-link-hover: var(--color-primary);
   }
   
   *, *:before, *:after {
@@ -420,10 +428,12 @@
       line-height: var(--line-height-base);
   }
   
-  section :is(h1, h2, h3, h4, h5, h6) {
+  h1, h2, h3, h4, h5, h6 {
       font-family: var(--font-family-title);
       font-weight: var(--font-weight-bold);
   }
+  
+  
   
   a:link {
       background-color: var(--text-color);
@@ -493,8 +503,7 @@
   .footer{
     padding: var(--footer-padding);
   }
-
-
+  
   /*=============== menus =============== */
   .navbar-menu{
     float: right;
